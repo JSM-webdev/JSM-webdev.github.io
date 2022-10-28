@@ -1,0 +1,35 @@
+*{
+    box-sizing:border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 10px;
+} /*body is a flex container for header, div, */
+
+header, main, nav, aside, footer {
+padding: 20px;
+border: 1px solid silver;
+}
+
+.container {
+ outline: 1px solid rgb(111, 173, 234);
+ display: flex;
+ flex-grow: 1;
+} /*container is a flex container for the  */
+
+main {
+    flex-grow: 1;
+}
+header, footer {
+    margin: 10px 0;
+}
+
+/* Add mobile responsively */
+@media screen and (min-width: 700px) {
+    .container {
+        flex-direction: row;
+    }
+}
